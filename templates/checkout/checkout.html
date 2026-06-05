@@ -201,13 +201,13 @@
 <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
 <script>
   var options = {
-    "key": "rzp_test_zY2TIOfcQp1EMp",
-    "amount": "50000",
+    "key": "rzp_test_SxtHfkfHK7WR5N",
+    "amount": "{{ order.amount }}",
     "name": "Learnify Online Course",
     "description": "Payment For {{course.title}}",
     "image": "{% static 'img/icon.png' %}",
     "order_id": "{{order.id}}",
-    "callback_url": "http://127.0.0.1:8000/verify_payment",
+   "callback_url": "{% url 'verify_payment' %}",
     "handler": function (response) {
       // Handle the success response here
       alert('Payment successful! Payment ID: ' + response.razorpay_payment_id);
