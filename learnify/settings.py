@@ -150,5 +150,5 @@ EMAIL_HOST_USER = 'ganeshplays700@gmail.com'
 EMAIL_HOST_PASSWORD = 'iadwfjyshkymzsnz'
 
 
-KEY_ID = "rrzp_test_SxtHfkfHK7WR5N"
+KEY_ID = "rzp_test_SxtHfkfHK7WR5N"
 KEY_SECRET = "nY9impVcLJVO5j4zzzgofpmp" 
